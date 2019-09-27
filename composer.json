@@ -1,0 +1,30 @@
+{
+    "name": "chloroplast/marmot-framework",
+    "keywords": ["framework", "marmot"],
+    "description": "marmot framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chloroplast",
+            "email": "41893204@qq.com"
+        }
+    ],
+    "require": {
+        "chloroplast/framework-basecode": "dev-master"
+    },
+    "require-dev": {
+       "chloroplast/marmot-dev-pacakges": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Monkey\\Framework\\": "src"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}
