@@ -1,7 +1,7 @@
 {
-    "name": "chloroplast/marmot-framework",
-    "keywords": ["framework", "marmot"],
-    "description": "marmot framework",
+    "name": "chloroplast/monkey-framework",
+    "keywords": ["framework", "monkey"],
+    "description": "monkey framework",
     "type": "library",
     "license": "MIT",
     "authors": [
