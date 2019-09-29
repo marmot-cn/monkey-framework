@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\View\Json;
+namespace Marmot\Framework\View\Json;
 
 /**
  * json 格式视图输出

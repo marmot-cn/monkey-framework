@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\View;
+namespace Marmot\Framework\View;
 
 /**
  * Smarty 模板类

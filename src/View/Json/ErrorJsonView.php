@@ -1,7 +1,7 @@
 <?php
-namespace Monkey\Framework\View\Json;
+namespace Marmot\Framework\View\Json;
 
-use Monkey\Framework\Interfaces\IView;
+use Marmot\Framework\Interfaces\IView;
 use Marmot\Core;
 
 /**

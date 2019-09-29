@@ -1,13 +1,13 @@
 <?php
-namespace Monkey\Framework\Controller;
+namespace Marmot\Framework\Controller;
 
-use Monkey\Framework\Classes\Response;
+use Marmot\Framework\Classes\Response;
 
-use Monkey\Framework\View\Json\ErrorJsonView;
-use Monkey\Framework\View\Json\SuccessJsonView;
+use Marmot\Framework\View\Json\ErrorJsonView;
+use Marmot\Framework\View\Json\SuccessJsonView;
 
-use Monkey\Framework\View\Template\ErrorTemplateView;
-use Monkey\Framework\View\Template\SuccessTemplateView;
+use Marmot\Framework\View\Template\ErrorTemplateView;
+use Marmot\Framework\View\Template\SuccessTemplateView;
 
 /**
  * jsonapi性状, 具体应用层继承 Controller, 如果是前端服务层提供页面服务则实现 Web性状.

@@ -1,6 +1,6 @@
 <?php
 //powered by chloroplast
-namespace Monkey\Framework\Classes;
+namespace Marmot\Framework\Classes;
 
 use Marmot\Basecode\Classes\Response as BaseResponse;
 
@@ -10,5 +10,5 @@ class Response extends BaseResponse
 
     public $format = self::FORMAT_JSON_API;
 
-    public $formatters = [self::FORMAT_JSON_API => 'Monkey\Framework\View\JsonApiResponseFormatter'];
+    public $formatters = [self::FORMAT_JSON_API => 'Marmot\Framework\View\JsonApiResponseFormatter'];
 }

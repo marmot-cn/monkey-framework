@@ -1,6 +1,6 @@
 <?php
 //powered by kevin
-namespace Monkey\Framework\Classes;
+namespace Marmot\Framework\Classes;
 
 use Marmot\Core;
 

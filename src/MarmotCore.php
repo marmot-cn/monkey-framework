@@ -32,7 +32,7 @@ abstract class MarmotCore extends BaseMarmotCore
 
     protected function initMysql()
     {
-        self::$dbDriver = self::$container->get('Monkey\Framework\Classes\MyPdo');
+        self::$dbDriver = self::$container->get('Marmot\Framework\Classes\MyPdo');
     }
 
     protected function initMongo()
@@ -67,7 +67,7 @@ abstract class MarmotCore extends BaseMarmotCore
     
     private function initSmarty()
     {
-        $smarty = \Monkey\Framework\View\Smarty::getInstance();
+        $smarty = \Marmot\Framework\View\Smarty::getInstance();
 
         //smarty config
         $smarty->setTemplateDir($this->getAppPath().'src/View/Smarty/Templates');

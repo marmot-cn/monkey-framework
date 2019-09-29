@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\Adapter\Restful;
+namespace Marmot\Framework\Adapter\Restful;
 
 use Marmot\Basecode\Adapter\Restful\GuzzleConcurrentAdapter as BaseGuzzleConcurrentAdapter;
 

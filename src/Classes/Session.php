@@ -1,6 +1,6 @@
 <?php
 //powered by chloroplast
-namespace Monkey\Framework\Classes;
+namespace Marmot\Framework\Classes;
 
 /**
  * 抽象 session, 保存 获取 session

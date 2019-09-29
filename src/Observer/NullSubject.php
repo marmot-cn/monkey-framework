@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\Observer;
+namespace Marmot\Framework\Observer;
 
 use Marmot\Basecode\Observer\NullSubject as BaseNullSubject;
 

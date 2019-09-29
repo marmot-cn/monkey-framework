@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\Query;
+namespace Marmot\Framework\Query;
 
 use Marmot\Basecode\Query\FragmentCacheQuery as BaseFragmentCacheQuery;
 

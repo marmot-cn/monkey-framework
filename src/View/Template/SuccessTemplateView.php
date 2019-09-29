@@ -1,7 +1,7 @@
 <?php
-namespace Monkey\Framework\View\Template;
+namespace Marmot\Framework\View\Template;
 
-use Monkey\Framework\Interfaces\IView;
+use Marmot\Framework\Interfaces\IView;
 use Marmot\Core;
 
 /**

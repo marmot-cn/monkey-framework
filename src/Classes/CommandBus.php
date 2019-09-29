@@ -1,6 +1,6 @@
 <?php
 //powered by kevin
-namespace Monkey\Framework\Classes;
+namespace Marmot\Framework\Classes;
 
 use Marmot\Basecode\Classes\CommandBus as BaseCommandBus;
 use Marmot\Interfaces\ICommandHandlerFactory;

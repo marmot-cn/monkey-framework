@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\Command\Cache;
+namespace Marmot\Framework\Command\Cache;
 
 use Marmot\Basecode\Command\Cache\DelCacheCommand as BaseDelCacheCommand;
 

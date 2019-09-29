@@ -1,6 +1,6 @@
 <?php
 //powered by chloroplast
-namespace Monkey\Framework\Classes;
+namespace Marmot\Framework\Classes;
 
 use Marmot\Basecode\Classes\Repository as BaseRepository;
 

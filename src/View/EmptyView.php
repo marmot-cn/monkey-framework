@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\View;
+namespace Marmot\Framework\View;
 
 use Marmot\Basecode\View\EmptyView as BaseEmptyView;
 

@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\Adapter;
+namespace Marmot\Framework\Adapter;
 
 use Marmot\Basecode\Adapter\ConcurrentAdapter as BaseConcurrentAdapter;
 

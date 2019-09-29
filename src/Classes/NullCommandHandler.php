@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\Classes;
+namespace Marmot\Framework\Classes;
 
 use Marmot\Basecode\Classes\NullCommandHandler as BaseNullCommandHandler;
 

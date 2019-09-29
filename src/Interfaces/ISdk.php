@@ -1,5 +1,5 @@
 <?php
-namespace Monkey\Framework\Interfaces;
+namespace Marmot\Framework\Interfaces;
 
 interface ISdk
 {

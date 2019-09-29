@@ -1,7 +1,7 @@
 <?php
-namespace Monkey\Framework\View\Template;
+namespace Marmot\Framework\View\Template;
 
-use Monkey\Framework\View\Smarty;
+use Marmot\Framework\View\Smarty;
 
 /**
  * 模板输出父类
@@ -10,8 +10,6 @@ use Monkey\Framework\View\Smarty;
  */
 abstract class TemplateView
 {
-
-    
     private $view;
 
     private $data;
