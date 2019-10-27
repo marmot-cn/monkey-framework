@@ -17,18 +17,12 @@ class CommandBus extends BaseCommandBus
 
     public function __destruct()
     {
-        unset($this->transaction);
         parent::__destruct();
-    }
-
-    protected function getTransaction() : Transaction
-    {
-        return $this->transaction;
     }
 
     protected function sendAction(ICommandHandler $handler, ICommand $command) : bool
     {
-        if ($handler->execute($command) && $transaction->commit()) {
+        if ($handler->execute($command)) {
             return true;
         }
         return false;
