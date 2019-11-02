@@ -50,6 +50,6 @@ abstract class JsonView
     {
         $this->result['data'] = $data;
 
-        return json_encode($this->getResult());
+        echo json_encode($this->getResult());
     }
 }
