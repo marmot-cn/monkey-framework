@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "chloroplast/framework-basecode": "0.9.4",
+        "chloroplast/framework-basecode": "0.9.5",
         "smarty/smarty": "3.1.31"
     },
     "require-dev": {
