@@ -14,12 +14,7 @@ class SuccessJsonView extends JsonView implements IView
     public function display()
     {
         $data = array();
-
-        $result = array(
-            'status' => 1,
-            'data' => $data
-        );
-
-        return $this->success()->encode($result);
+        
+        return $this->success()->encode($data);
     }
 }
