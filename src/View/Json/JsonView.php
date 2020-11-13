@@ -15,6 +15,8 @@ abstract class JsonView
     
     private $result;
 
+    private $data;
+
     public function __construct()
     {
         $this->status = self::STATUS_SUCCESS;
