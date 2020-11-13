@@ -26,11 +26,17 @@ trait WebTrait
         $this->render(new ErrorTemplateView());
     }
 
+    /**
+     * @codeCoverageIgnore
+     */
     public function error()
     {
         header('HTTP/1.1 500 Internal Server Error');
     }
 
+    /**
+     * @codeCoverageIgnore
+     */
     public function notFound()
     {
         header('HTTP/1.1 404 Not Found');
@@ -38,6 +44,6 @@ trait WebTrait
 
     protected function initHook()
     {
-        $this->getResponse()->format = Response::DEFAULT;
+        $this->getResponse()->format = Response::FORMAT_DEFAULT;
     }
 }

@@ -11,7 +11,7 @@ use Marmot\Core;
  */
 class ErrorJsonView extends JsonView implements IView
 {
-    public function display()
+    public function display() : void
     {
         $error = Core::getLastError();
         $data = array(
@@ -22,6 +22,6 @@ class ErrorJsonView extends JsonView implements IView
             'source'=>$error->getSource()
         );
 
-        return $this->failure()->encode($data);
+        $this->failure()->encode($data);
     }
 }

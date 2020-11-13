@@ -30,24 +30,9 @@ abstract class MarmotCore extends BaseMarmotCore
         return $this->framework;
     }
 
-    protected function initMysql()
-    {
-        self::$dbDriver = self::$container->get('Marmot\Framework\Classes\MyPdo');
-    }
-
-    protected function initMongo()
-    {
-        $mongoHost = self::$container->get('mongo.host');
-
-        if (!empty($mongoHost)) {
-            self::$mongoDriver = new \MongoDB\Client(
-                $mongoHost,
-                self::$container->get('mongo.uriOptions'),
-                self::$container->get('mongo.driverOptions')
-            );
-        }
-    }
-
+    /**
+     * @codeCoverageIgnore
+     */
     protected function initMemcached(array $memcachedServices)
     {
         //初始化memcached缓存 -- 开始
@@ -65,13 +50,13 @@ abstract class MarmotCore extends BaseMarmotCore
         $this->initSmarty();
     }
     
-    private function initSmarty()
+    protected function initSmarty()
     {
         $smarty = \Marmot\Framework\View\Smarty::getInstance();
 
         //smarty config
-        $smarty->setTemplateDir($this->getAppPath().'src/View/Smarty/Templates');
-        $smarty->setCompileDir($this->getAppPath().'cache/Smarty/Compile');
-        $smarty->setCacheDir($this->getAppPath().'cache/Smarty/Cache');
+        $smarty->setTemplateDir($this->getAppPath().'src/View/Smarty/Templates/');
+        $smarty->setCompileDir($this->getAppPath().'cache/Smarty/Compile/');
+        $smarty->setCacheDir($this->getAppPath().'cache/Smarty/Cache/');
     }
 }

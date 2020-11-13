@@ -15,7 +15,9 @@ class ErrorTemplateView extends TemplateView implements IView
     {
         $error = Core::getLastError();
 
-        $this->getView()->assign('errorId', $error->getId());
-        $this->getView()->display('System/Error.tpl');
+        $view = $this->getView();
+        
+        $view->assign('errorId', $error->getId());
+        $view->display('System/Error.tpl');
     }
 }

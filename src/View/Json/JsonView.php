@@ -22,6 +22,7 @@ abstract class JsonView
             'status' => $this->status,
             'data' => array()
         );
+        $this->data = array();
     }
 
     public function success() : self
@@ -48,8 +49,8 @@ abstract class JsonView
 
     protected function encode(array $data = array()) : void
     {
+        $this->data = $data;
         $this->result['data'] = $data;
-
         echo json_encode($this->getResult());
     }
 }

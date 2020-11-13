@@ -4,7 +4,9 @@ namespace Marmot\Framework;
 use Marmot\Interfaces\Application\IFramework;
 
 define('SDK_ROOT', dirname(__FILE__) . DIRECTORY_SEPARATOR);
-
+/**
+ * @codeCoverageIgnore
+ */
 class Framework implements IFramework
 {
     public function initErrorConfig() : void

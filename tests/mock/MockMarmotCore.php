@@ -51,9 +51,9 @@ class MockMarmotCore extends MarmotCore
     {
     }
 
-    protected function getAppPath() : string
+    public function getAppPath() : string
     {
-        return '';
+        return dirname(__FILE__) . DIRECTORY_SEPARATOR;
     }
 
     protected function initAutoload()
@@ -63,5 +63,10 @@ class MockMarmotCore extends MarmotCore
     public function isPublicMockedErrorRoute()
     {
         return parent::isMockedErrorRoute();
+    }
+
+    public function mockInitSmarty()
+    {
+        return $this->initSmarty();
     }
 }

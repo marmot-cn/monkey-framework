@@ -46,6 +46,7 @@ class Core extends MarmotCore
         $this->initCache();//初始化缓存使用
         $this->initDb();//初始化mysql
         $this->initError();
+        $this->initHook();
     }
 
     protected function initApplication() : void
@@ -61,6 +62,9 @@ class Core extends MarmotCore
     private function initTestEnv()
     {
         $_ENV['APP_ENV'] = 'test';
+        ini_set('session.save_handler', 'files');
+        ini_set('session.save_path', '/var/www/html/cache/');
+        session_start();
     }
 
     protected function initAutoload()

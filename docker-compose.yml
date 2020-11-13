@@ -1,5 +1,5 @@
 phpfpm:
-  image: "registry.cn-hangzhou.aliyuncs.com/phpfpm/phpfpm-end"
+  image: "registry.cn-hangzhou.aliyuncs.com/phpfpm/phpfpm-front"
   volumes:
    - ./:/var/www/html/
   cap_add:

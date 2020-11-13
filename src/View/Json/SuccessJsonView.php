@@ -11,10 +11,10 @@ use Marmot\Core;
  */
 class SuccessJsonView extends JsonView implements IView
 {
-    public function display()
+    public function display() : void
     {
         $data = array();
         
-        return $this->success()->encode($data);
+        $this->success()->encode($data);
     }
 }

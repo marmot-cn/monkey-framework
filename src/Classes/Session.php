@@ -4,6 +4,7 @@ namespace Marmot\Framework\Classes;
 
 /**
  * 抽象 session, 保存 获取 session
+ * @SuppressWarnings(PHPMD.Superglobals)
  */
 abstract class Session
 {
@@ -42,7 +43,7 @@ abstract class Session
         unset($_SESSION[$key]);
     }
 
-    private function formatKey($id) : string
+    protected function formatKey($id) : string
     {
         return $this->getKey().'.'.$id;
     }
