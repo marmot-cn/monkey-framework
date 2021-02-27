@@ -3,7 +3,7 @@ namespace Marmot\Framework;
 
 use Marmot\Interfaces\Application\IFramework;
 
-define('SDK_ROOT', dirname(__FILE__) . DIRECTORY_SEPARATOR);
+define('FRAMEWORK_ROOT', dirname(__FILE__) . DIRECTORY_SEPARATOR);
 /**
  * @codeCoverageIgnore
  */
@@ -11,16 +11,16 @@ class Framework implements IFramework
 {
     public function initErrorConfig() : void
     {
-        include_once SDK_ROOT.'errorConfig.php';
+        include_once FRAMEWORK_ROOT.'errorConfig.php';
     }
 
     public function getErrorDescriptions() : array
     {
-        return include_once SDK_ROOT.'./errorDescriptionConfig.php';
+        return include_once FRAMEWORK_ROOT.'./errorDescriptionConfig.php';
     }
 
     public function initConfig() : void
     {
-        include_once SDK_ROOT.'config.php';
+        include_once FRAMEWORK_ROOT.'config.php';
     }
 }
