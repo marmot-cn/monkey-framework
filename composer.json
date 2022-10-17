@@ -12,7 +12,7 @@
     ],
     "require": {
         "chloroplast/framework-basecode": "1.0.3",
-        "smarty/smarty": "3.1.31"
+        "smarty/smarty": "3.1.47"
     },
     "require-dev": {
        "chloroplast/marmot-dev-pacakges": "1.0.1"
