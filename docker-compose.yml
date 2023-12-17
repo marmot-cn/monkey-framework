@@ -1,6 +1,11 @@
-phpfpm:
-  image: "registry.cn-hangzhou.aliyuncs.com/phpfpm/phpfpm-front"
-  volumes:
-   - ./:/var/www/html/
-  cap_add:
-   - SYS_PTRACE
+version: "3"
+
+services:
+  phpfpm:
+    image: "registry.cn-hangzhou.aliyuncs.com/phpfpm/phpfpm-front"
+    volumes:
+     - ./:/var/www/html/
+    cap_add:
+     - SYS_PTRACE
+    networks:
+      - default
