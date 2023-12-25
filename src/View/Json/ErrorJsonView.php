@@ -17,8 +17,10 @@ class ErrorJsonView extends JsonView implements IView
         $data = array(
             'id'=>$error->getId(),
             'title'=>$error->getTitle(),
+            'titleEn'=>$error->getTitleEn(),
             'code'=>$error->getCode(),
             'detail'=>$error->getDetail(),
+            'detailEn'=>$error->getDetailEn(),
             'source'=>$error->getSource()
         );
 

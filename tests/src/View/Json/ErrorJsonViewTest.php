@@ -41,8 +41,10 @@ class ErrorJsonViewTest extends TestCase
         $data = array(
             'id'=>$error->getId(),
             'title'=>$error->getTitle(),
+            'titleEn'=>$error->getTitleEn(),
             'code'=>$error->getCode(),
             'detail'=>$error->getDetail(),
+            'detailEn'=>$error->getDetailEn(),
             'source'=>$error->getSource()
         );
         $expectedResult = json_encode([
